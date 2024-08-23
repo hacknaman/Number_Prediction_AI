@@ -35,6 +35,10 @@ Follow these steps to set up the project on your local machine.
 Ensure you have Python installed, along with the following dependencies:
 - NumPy
 - TensorFlow
+- Matplotlib
+- Ipywidgets
+- Pillow
+- python-tk
 
 You can install the required dependencies using pip:
 
