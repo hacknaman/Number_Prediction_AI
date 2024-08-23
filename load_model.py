@@ -1,11 +1,8 @@
 from tkinter import *
-from tkinter import colorchooser
-import PIL.ImageGrab as ImageGrab
-from tkinter import filedialog
 from tkinter import messagebox
 
+import PIL.ImageGrab as ImageGrab
 import tensorflow as tf
-
 import numpy as np
 
 root = Tk()
