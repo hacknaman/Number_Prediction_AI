@@ -43,6 +43,7 @@ def usePredict():
     # Predict using the Neural Network
     prediction = model.predict(img_np.reshape(1,400))
     prediction_p = tf.nn.softmax(prediction)
+    print(f'All predictions -- {prediction_p}')
     yhat = np.argmax(prediction_p)
     print(f'pridect num in drawing is {yhat}')
     messagebox.showinfo("Predict App" , f"Number is {yhat}.")

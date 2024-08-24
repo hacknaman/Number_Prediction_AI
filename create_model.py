@@ -46,7 +46,6 @@ for i,ax in enumerate(axes.flat):
     ax.set_title(y[random_index,0])
     ax.set_axis_off()
 
-plt.title("Figure 1")
 fig.suptitle("Label and Image", fontsize=14)
 plt.show()
 
@@ -55,8 +54,8 @@ tf.random.set_seed(1234) # for consistent results
 model = Sequential(
     [
         tf.keras.Input(shape=(400,)),
-        Dense(60, activation = 'relu'),
-        Dense(30, activation = 'relu'),
+        Dense(45, activation = 'relu'),
+        Dense(20, activation = 'relu'),
         Dense(10, activation = 'linear')  
     ], name = "my_model" 
 )
@@ -79,7 +78,7 @@ model.compile(
 
 history = model.fit(
     X,y,
-    epochs=75
+    epochs=50
 )
 
 fig, axes = plt.subplots(8,8, figsize=(5,5))
